@@ -12,5 +12,10 @@ pipeline {
                 echo "testing the scm projects"
             }
           }   
+        stage(deploying) {
+            steps {
+                echo "testing the multibranch pipeline"
+            }
+          }     
     }
 }
